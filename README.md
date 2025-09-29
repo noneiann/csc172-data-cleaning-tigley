@@ -107,3 +107,7 @@
 - **Rows before cleaning:** 891
 - **Rows after cleaning:** 891
 - **Outcome:** Cleaned Titanic dataset with missing values filled, duplicates handled, standardized formats applied, and meaningful outliers retained for analysis.
+
+## Video:
+
+https://drive.google.com/file/d/1bhxMCNu2L_h8BL-NARaoxLMleP1-tkwe/view?usp=sharing
