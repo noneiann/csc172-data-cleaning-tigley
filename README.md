@@ -40,8 +40,8 @@ Data Cleaning Assignment for CSC172
    df.groupby('City')['Sales'].sum()
    ```
 
-```
-    2. Group and assign a new value back
+   ```
+   2. Group and assign a new value back
 
    If you want to modify or replace a column based on group operations, use transform().
 
@@ -73,4 +73,29 @@ Data Cleaning Assignment for CSC172
    Example — replace with group rank:
 
    df['Sales_rank'] = df.groupby('City')['Sales'].rank()
+   ```
+
 ```
+
+```
+
+3. Duplicate columns to variable
+   Prompt: how to get duplicate column values in panda and input in a variable, just code
+   Generated Code:
+
+   ```{python}
+   import pandas as pd
+
+   # Example DataFrame
+   df = pd.DataFrame({
+       'Name': ['Alice', 'Bob', 'Alice', 'Charlie', 'Bob'],
+       'Age': [24, 30, 24, 18, 30]
+   })
+
+   # Get duplicate values in a column and store in variable
+   duplicates = df['Name'][df['Name'].duplicated()].unique().tolist()
+
+   print(duplicates)
+   ```
+
+4.
