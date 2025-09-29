@@ -1,4 +1,4 @@
-# Data Cleaning with AI Support
+# Assignment 0: Data Cleaning with AI
 
 ## Student Information
 
