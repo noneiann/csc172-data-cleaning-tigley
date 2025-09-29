@@ -38,6 +38,7 @@
      ```
 
 2. **Duplicates**
+   DISCLAIMER: there are actually zero duplicate rows and zero duplicate names with same ticket but I still put them there just to be sure.
 
    - Removed **exact duplicate rows**.
      ```python
@@ -61,7 +62,7 @@
 
 4. **Outliers**
 
-   - Checked `Fare` and `Age` using the IQR method but decided **not to remove** any outliers to preserve real-world variation.
+   - Checked `Fare` and `Age` using the IQR method but **not to remove** any outliers since they are real world values.
 
 5. **Export**
    - Saved the cleaned dataset for later analysis.
@@ -76,14 +77,14 @@
    - **Model:** Gemini 2.5
    - **Prompt:**
      > “In data cleaning, what is the best approach for skewed age dataset grouped by gender (male and female), and class (1, 2, 3)?”
-   - **AI Suggestion:** Handle missing `Age` values by grouping the data by `Pclass` and `Sex`, then applying a median or log transformation per group.
+   - **Proposed Solution:** Handle missing `Age` values by grouping the data by `Pclass` and `Sex`, then applying a median or log transformation per group.
 
 2. **Group by syntax**
 
    - **Model:** ChatGPT
    - **Prompt:**
      > “How to group by and change values in pandas”
-   - **Generated Example:**
+   - **Generated Code:**
      ```python
      df['Sales_mean'] = df.groupby('City')['Sales'].transform('mean')
      ```
@@ -92,10 +93,16 @@
    - **Model:** ChatGPT
    - **Prompt:**
      > “How to get duplicate column values in pandas and input in a variable (just code)”
-   - **Generated Example:**
+   - **Generated Code:**
      ```python
      duplicates = df['Name'][df['Name'].duplicated()].unique().tolist()
      ```
+4. **README.MD Formatting**
+   - **Model:** ChatGPT
+   - **Prompt:**
+     > “Format my uploaded readme.md properly”
+   - **Generated Code:**
+     This formatted Readme.md
 
 ## Results
 
