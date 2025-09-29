@@ -14,8 +14,6 @@
 ## Issues Found
 
 - **Missing values:** `Age`, `Embarked`, and `Cabin` columns contained missing data.
-- **Duplicates:** Some duplicate rows, duplicate names, and shared tickets were found.
-- **Inconsistencies:** Text formatting in columns like `Sex`, `Embarked`, and `Name` was not standardized.
 - **Outliers:** Outliers were identified in `Fare` and `Age`, but intentionally retained.
 
 ## Cleaning Steps
